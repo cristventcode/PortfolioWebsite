@@ -1,0 +1,65 @@
+﻿@Styles.Render("~/Content/itunesapi-styles.css")
+<br />
+<div class="container" id="page-heading">
+    <h4>Albums</h4>
+</div>
+<main class="container">
+    <div class="container col-md-3 no-padding">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4> Search Form </h4>
+            </div>
+            <div class="panel-body">
+                <div id="search-area">
+                    <form>
+                        <div class="form-group">
+                            <label for="search-person"> Artist Name </label>
+                            <input type="text" class="form-control" id="search-person" name="search-person" placeholder="Artist Name">
+                        </div>
+                    </form>
+                    <button class="btn" id="get-artist"> Search </button>
+                    <button class="btn" id="clear-results"> Clear Results </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="albums-holder" class="container col-md-4 hidden no-padding">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 id="artist-name"> Search Results </h4>
+                <p> Top 5 </p>
+            </div>
+            <div class="panel-body">
+                <ul id="artist-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="details-holder" class="container col-md-5 hidden no-padding">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 id="more-details"> Album Details </h4>
+            </div>
+            <div class="panel-body">
+                <ul id="details-list" class="list-group">
+                    <li class="list-group-item"> <img id="details-album-art" src="#"> </li>
+                    <li class="list-group-item"> Artist: <span id="details-artist"> </span></li>
+                    <li class="list-group-item"> Album: <span id="details-album"> </span></li>
+                    <li class="list-group-item"> Release Date: <span id="details-release"> </span></li>
+                    <li class="list-group-item"> Genre: <span id="details-genre"> </span></li>
+                    <li class="list-group-item"> Price: <span id="details-price"> </span></li>
+                    <li class="list-group-item">
+                        <button id="song-list-button" class="btn btn-xs" data-toggle="collapse" data-target="#song-list">View Songs</button>
+                        <ul id="song-list" class="collapse list-group"></ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a id="buynow-link" href="" target="_blank"> <button class="btn btn-success"> Buy Now </button> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts{
+    @Scripts.Render("~/Scripts/itunesapi/itunesapi.js")
+}

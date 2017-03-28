@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+}
+
+#winner {
+    font-size: 15rem;
+}
+
+#total-list li, #won-list li{
+    width: 50px;
+}
+
+#winner-holder .panel-heading h4{
+    margin: 0px;
+}
+
