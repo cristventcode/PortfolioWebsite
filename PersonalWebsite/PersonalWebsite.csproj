@@ -207,6 +207,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Link\CristianVentura-resume.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\itunesapi\itunesapi.js" />
     <Content Include="Scripts\itunesapi\weather.js" />

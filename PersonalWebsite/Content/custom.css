@@ -1,12 +1,12 @@
 ﻿
 *, h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 #name-holder h1 {
     font-size: 28px;
-    color: grey;
-    font-family: 'Open Sans', sans-serif;
+    color: #315b7d;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     margin-top: 0px;
 }
@@ -34,7 +34,7 @@
 }
 
 .navbar-brand {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #navbar-main a {
@@ -49,9 +49,9 @@
 }
 
 .shadow {
-    -webkit-box-shadow: 0px 2px 12px -2px black;
-    -moz-box-shadow: 0px 2px 12px -2px black;
-    box-shadow: 0px 2px 12px -2px black;
+    -webkit-box-shadow: 0px 2px 6px -2px #315b7d;
+    -moz-box-shadow: 0px 2px 6px -2px #315b7d;
+    box-shadow: 0px 2px 6px -2px #315b7d;
 }
 
 .shadow-button {
@@ -91,24 +91,29 @@
 .info-bio {
     font-size: 13px;
     color: black;
-    padding: 15px 15px;
-    border: .5px solid #e6e6e6;
+    padding: 15px 0px;
+    /*border: .5px solid #e6e6e6;*/
     border-radius: 4px;
     margin-top: 15px;
 }
 
 .panel-default .panel-heading {
     background-color: #dae6f0;
-    color: black;
+    color: #315b7d;
     font-weight: normal;
 }
 
+footer {
+    text-align: center;
+}
 
 .contact-info {
     font-size: 16px;
-    color: black;
+    color: steelblue;
+    background-color: #f7f7f7;
+    font-weight: 500;
     padding: 10px;
-    border: .5px solid #e6e6e6;
+    /*border: .5px solid #e6e6e6;*/
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -118,13 +123,13 @@
 }
 
 .hr-thick {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px dashed grey;
     margin-bottom: 30px;
 }
 
 .details-icon {
     margin-right: 12px;
-    color: black;
+    color: grey;
 }
 
 .fa-2x {
