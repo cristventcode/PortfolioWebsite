@@ -104,6 +104,11 @@
     padding: 3px 15px;
 }
 
+.panel-default{
+    border-color: #f7f7f7;
+    border: 1.5px solid #f7f7f7;
+}
+
 footer {
     text-align: center;
 }
