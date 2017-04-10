@@ -164,6 +164,14 @@ h4, h3 {
     text-align: left;
 }
 
+#guide-message{
+    padding: 0px 15px 5px 15px;
+    color: red;
+}
+
+#start-game-btn{
+}
+
 @media (min-width: 768px) {
     #personal-image {
         text-align: center;

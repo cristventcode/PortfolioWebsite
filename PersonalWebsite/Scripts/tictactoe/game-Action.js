@@ -8,6 +8,7 @@ $(document).ready(function () {
     var playableBoxes = [],
         classname = document.getElementsByClassName("box-content"),
         resetGame = document.getElementById("reset-game-btn"),
+        startGameBtn = document.getElementById("start-game-btn"),
         clickBoard = document.getElementById("game-area"),
         scoreHolderX = document.getElementById("player-x"),
         humanCpuButton = document.getElementById("human-cpu-mode"),
@@ -30,8 +31,9 @@ $(document).ready(function () {
         ["~", "~", "~"]
     ];
 
-    var startButton = document.getElementById("testingThis");
+    var startButton = document.getElementById("start-game-btn");
     startButton.addEventListener("click", function () {
+        $(startGameBtn).prop("disabled", true);
         getGameMode();
         luanchGameMode();
     });
@@ -120,6 +122,8 @@ $(document).ready(function () {
             var randomSelection = Math.floor(Math.random() * (playableBoxes.length - 0)) + 0;
             var element = document.getElementById(playableBoxes[randomSelection]);
             element.innerText = playingLetter;
+            element.classList.remove("hover-over");
+            element.style.pointerEvents = "none";
             trackGameMoves(playableBoxes[randomSelection]);
             checkWinStatus();
             playableBoxes.splice(randomSelection, 1);
