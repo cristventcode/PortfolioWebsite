@@ -23,5 +23,10 @@ namespace PersonalWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult CheckList()
+        {
+            return View();
+        }
     }
 }
